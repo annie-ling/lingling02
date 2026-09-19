@@ -1,19 +1,18 @@
-工程管家 V4｜營運版
+工程管家 V5｜多人雲端準備版
 
-新增：
-- 客戶 CRM
-- 10 階段工程流程看板
-- 今日工地
-- 負責師傅
-- 分期收款：訂金／二期款／尾款
-- 詳細報價品項、數量、單價、折扣
-- 自動報價編號
-- 保固與施工紀錄
-- 老闆數據中心
-- 工程類型與師傅案件統計
-- JSON 資料備份
-- 手機優先介面
+已加入：
+- 老闆／行政／師傅三角色
+- 師傅只看分派給自己的工程
+- 師傅隱藏財務欄位
+- 團隊管理
+- Supabase 設定頁
+- Supabase SQL schema 範本
+- 案件、今日流程、施工紀錄的角色化基礎
 
-注意：
-V4 仍以 localStorage 作為可直接部署測試的資料層。照片也會占用瀏覽器容量。
-若要正式多人商用，下一版應接 Supabase Auth / Database / Storage + RLS，並增加角色權限（老闆、行政、師傅）。
+目前 ZIP 可直接放 GitHub Pages 測試，但資料層仍是 localStorage。
+真正跨手機多人同步需要接：
+Supabase Auth + Database + RLS + private Storage。
+
+安全：
+前端只能放 publishable/anon key，絕對不要放 service_role key。
+正式商用前一定要完成 RLS，避免不同公司的資料互相可見。
