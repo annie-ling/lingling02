@@ -1,18 +1,14 @@
-工程管家 V5｜多人雲端準備版
+工程管家 V6｜商用介面版
 
-已加入：
-- 老闆／行政／師傅三角色
-- 師傅只看分派給自己的工程
-- 師傅隱藏財務欄位
-- 團隊管理
-- Supabase 設定頁
-- Supabase SQL schema 範本
-- 案件、今日流程、施工紀錄的角色化基礎
+這版重點：
+- 底部導覽文字放大、提高辨識度
+- 全新線條 Icon 設計
+- 工程管家專屬扳手 App Icon
+- 首頁、今日工地、工程案件、新增、客戶、更多 六大導覽
+- 老闆／行政／師傅角色介面
+- 師傅隱藏財務資訊，只看分派案件
+- 手機優先、奶茶莫蘭迪商務介面
 
-目前 ZIP 可直接放 GitHub Pages 測試，但資料層仍是 localStorage。
-真正跨手機多人同步需要接：
-Supabase Auth + Database + RLS + private Storage。
-
-安全：
-前端只能放 publishable/anon key，絕對不要放 service_role key。
-正式商用前一定要完成 RLS，避免不同公司的資料互相可見。
+目前資料仍採 localStorage，方便直接上 GitHub Pages 測試。
+真正 V6 雲端商用部署需要你的 Supabase Project URL + publishable/anon key，再接 Auth、Database、Storage、RLS。
+絕對不要把 service_role key 放進前端。
